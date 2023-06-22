@@ -1,0 +1,100 @@
+:root {
+  --clr-desaturatedRed: hsl(0, 36%, 70%);
+  --clr-softRed: hsl(0, 93%, 68%);
+  --clr-darkGrayishRed: hsl(0, 6%, 24%);
+  --grad-linear-gradient:linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --grad-linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.desk-img {
+  display: none;
+}
+
+.mobile {
+  width: 100%;
+  max-height: 40vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--clr-desaturatedRed);
+  background: url(./images/bg-pattern-desktop.svg);
+}
+
+.logo {
+  padding: 20px 30px;
+}
+
+.coloured-head {
+  color: var(--clr-desaturatedRed);
+  font-weight: 300;
+}
+
+.content {
+  text-align: center;
+  padding: 30px;
+}
+.content h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+.content .coloured {
+  color: var(--clr-desaturatedRed);
+  font-weight: 400;
+  margin-block: 30px;
+}
+.content .input {
+  position: relative;
+  margin-block: 30px;
+}
+.content .input input {
+  width: 90%;
+  min-height: 40px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--clr-darkGrayishRed);
+}
+.content .input input::-moz-placeholder {
+  color: var(--clr-desaturatedRed);
+}
+.content .input input::placeholder {
+  color: var(--clr-desaturatedRed);
+}
+.content .input button {
+  position: absolute;
+  right: 2px;
+  width: 70px;
+  max-width: 70px;
+  border-radius: 30px;
+  border: none;
+  min-height: 41px;
+  background-color: var(--clr-desaturatedRed);
+}
+
+@media (min-width: 1000px) {
+  .mobile-img {
+    display: none;
+  }
+  .desk-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 60%;
+  }
+  .logo {
+    padding-left: 100px;
+  }
+  .content {
+    text-align: left;
+    max-width: 30%;
+    margin-top: 15%;
+    margin-left: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
